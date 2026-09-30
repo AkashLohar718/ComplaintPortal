@@ -1,0 +1,30 @@
+.dashboard-stat-card {
+  padding: 24px;
+  border-radius: 10px;
+  background: white;
+  border: 1px solid #e5e7eb;
+}
+
+.dashboard-stat-card p {
+  margin: 0 0 10px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.dashboard-stat-card h2 {
+  margin: 0;
+  font-size: 32px;
+  color: #111827;
+}
+
+.dashboard-stat-card.total {
+  border-left: 4px solid #2563eb;
+}
+
+.dashboard-stat-card.pending {
+  border-left: 4px solid #f59e0b;
+}
+
+.dashboard-stat-card.resolved {
+  border-left: 4px solid #10b981;
+}

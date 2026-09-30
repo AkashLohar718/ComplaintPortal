@@ -1,0 +1,69 @@
+.complaint-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 22px;
+}
+
+.complaint-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.complaint-card-header h3 {
+  margin: 0 0 6px;
+  color: #111827;
+  font-size: 18px;
+}
+
+.complaint-card-header p {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 13px;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status.in-progress {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.status.resolved {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.complaint-card-info {
+  display: flex;
+  gap: 25px;
+  margin: 20px 0;
+  color: #6b7280;
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+
+.view-complaint {
+  display: inline-block;
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.view-complaint:hover {
+  text-decoration: underline;
+}

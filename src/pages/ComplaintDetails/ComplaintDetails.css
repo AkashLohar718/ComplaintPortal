@@ -1,0 +1,167 @@
+.details-page {
+  min-height: calc(100vh - 70px);
+  background: #f8fafc;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+.details-container {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.complaint-id {
+  margin: 0 0 8px;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.details-header h1 {
+  margin: 0;
+  color: #111827;
+  font-size: 28px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.details-section {
+  padding: 25px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.details-section h2 {
+  margin: 0 0 20px;
+  color: #111827;
+  font-size: 18px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-item span {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.detail-item strong {
+  color: #374151;
+  font-size: 14px;
+  text-align: right;
+}
+
+.status-display {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.status-display p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.description-section,
+.remarks-section {
+  margin-top: 20px;
+}
+
+.description-section p,
+.remarks-section p {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.remarks-section {
+  background: #f8fafc;
+}
+
+.details-actions {
+  margin-top: 25px;
+}
+
+.back-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #2563eb;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.back-btn:hover {
+  background: #1d4ed8;
+}
+
+.not-found {
+  text-align: center;
+  padding: 70px 30px;
+}
+
+.not-found h1 {
+  margin: 0 0 10px;
+  color: #111827;
+}
+
+.not-found p {
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 700px) {
+  .details-page {
+    padding: 30px 15px;
+  }
+
+  .details-container {
+    padding: 22px;
+  }
+
+  .details-header {
+    flex-direction: column;
+  }
+
+  .details-header h1 {
+    font-size: 24px;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+}

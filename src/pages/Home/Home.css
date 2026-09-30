@@ -1,0 +1,193 @@
+.hero-section {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  background: #f8fafc;
+}
+
+.hero-content {
+  max-width: 850px;
+}
+
+.hero-tag {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #2563eb;
+}
+
+.hero-content h1 {
+  margin: 20px 0;
+  font-size: 56px;
+  line-height: 1.15;
+  color: #111827;
+}
+
+.hero-content h1 span {
+  color: #2563eb;
+}
+
+.hero-content p {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #6b7280;
+}
+
+.hero-buttons {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 13px 28px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.primary-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.secondary-btn {
+  background: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+}
+
+.secondary-btn:hover {
+  background: #eff6ff;
+}
+
+
+/* Sections */
+
+.how-section,
+.features-section {
+  padding: 90px 8%;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 50px;
+}
+
+.section-heading span {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #2563eb;
+}
+
+.section-heading h2 {
+  margin: 12px 0;
+  font-size: 36px;
+  color: #111827;
+}
+
+.section-heading p {
+  color: #6b7280;
+}
+
+
+/* Steps */
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.step-card {
+  padding: 30px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: white;
+}
+
+.step-number {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.step-card h3 {
+  margin: 15px 0 10px;
+}
+
+.step-card p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+
+/* Features */
+
+.features-section {
+  background: #f8fafc;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.feature-card h3 {
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .steps-container,
+  .features-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-content h1 {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 600px) {
+  .steps-container,
+  .features-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+}

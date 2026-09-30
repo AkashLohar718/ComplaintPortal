@@ -1,0 +1,61 @@
+.my-complaints-page {
+  min-height: calc(100vh - 70px);
+  background: #f8fafc;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+.my-complaints-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.my-complaints-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.my-complaints-header h1 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 30px;
+}
+
+.my-complaints-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.complaint-count {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 9px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.complaints-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+@media (max-width: 600px) {
+  .my-complaints-page {
+    padding: 30px 15px;
+  }
+
+  .my-complaints-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .my-complaints-header h1 {
+    font-size: 26px;
+  }
+}

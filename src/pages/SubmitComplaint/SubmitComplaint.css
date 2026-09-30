@@ -1,0 +1,144 @@
+.submit-page {
+  min-height: calc(100vh - 70px);
+  background: #f8fafc;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+.submit-container {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+.submit-header {
+  margin-bottom: 30px;
+}
+
+.submit-header h1 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 30px;
+}
+
+.submit-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.complaint-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #2563eb;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.cancel-btn,
+.submit-complaint-btn {
+  padding: 12px 22px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  text-decoration: none;
+  color: #374151;
+  background: #f3f4f6;
+}
+
+.cancel-btn:hover {
+  background: #e5e7eb;
+}
+
+.submit-complaint-btn {
+  border: none;
+  background: #2563eb;
+  color: white;
+}
+
+.submit-complaint-btn:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+  .submit-container {
+    padding: 25px 20px;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .cancel-btn,
+  .submit-complaint-btn {
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.form-error {
+  color: #dc2626;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.form-success {
+  color: #16a34a;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.submit-complaint-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
